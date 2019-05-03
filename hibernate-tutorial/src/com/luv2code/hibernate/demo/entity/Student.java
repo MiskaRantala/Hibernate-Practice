@@ -1,6 +1,7 @@
 package com.luv2code.hibernate.demo.entity;
 
 import javax.persistence.*;
+import javax.persistence.GeneratedValue;
 import java.io.Serializable;
 
 @Entity
@@ -9,7 +10,7 @@ public class Student implements Serializable {
 
     @Id
     @Column(name="id")
-    private int id;
+    private Integer id;
 
     @Id
     @Column(name="first_name")
