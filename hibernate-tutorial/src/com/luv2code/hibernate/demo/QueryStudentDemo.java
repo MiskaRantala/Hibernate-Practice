@@ -5,6 +5,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.List;
+
 public class QueryStudentDemo {
 
     public static void main(String[] args) {
@@ -20,6 +22,17 @@ public class QueryStudentDemo {
             // start a transaction
             session.beginTransaction();
 
+            // create the list
+            List<Student> theStudents;
+
+            // query students
+            System.out.println("Students whose email ends with %kki.fi");
+            theStudents = session.createQuery("FROM Student s WHERE s.email LIKE '%kki.fi'").getResultList();
+
+            // display the students
+            System.out.println();
+            displayStudents(theStudents);
+
             // commit transaction
             session.getTransaction().commit();
 
@@ -29,5 +42,11 @@ public class QueryStudentDemo {
             factory.close();
         }
 
+    }
+
+    private static void displayStudents(List<Student> theStudents) {
+        for (Student tempStudent : theStudents) {
+            System.out.println(tempStudent);
+        }
     }
 }
