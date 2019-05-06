@@ -9,18 +9,16 @@ import java.io.Serializable;
 public class Student implements Serializable {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Integer id;
 
-    @Id
     @Column(name="first_name")
     private String firstName;
 
-    @Id
     @Column(name="last_name")
     private String lastName;
 
-    @Id
     @Column(name="email")
     private String email;
 
