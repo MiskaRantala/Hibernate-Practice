@@ -5,9 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.util.List;
-
-public class QueryStudentDemo {
+public class DeleteStudentDemo {
 
     public static void main(String[] args) {
 
@@ -18,35 +16,28 @@ public class QueryStudentDemo {
         Session session = factory.getCurrentSession();
 
         try {
+            int studentId = 7;
 
-            // start a transaction
+            // now get a new session and start transaction
+            session = factory.getCurrentSession();
             session.beginTransaction();
 
-            // create the list
-            List<Student> theStudents;
+            // retrieve student based on the id: primary key
+            System.out.println("Getting student with id: " + studentId);
+            Student myStudent = session.get(Student.class, studentId);
 
-            // query students
-            System.out.println("Students whose email ends with %gmail.com");
-            theStudents = session.createQuery("FROM Student s WHERE s.email LIKE '%gmail.com'").getResultList();
+            // delete the student
+            System.out.println("Deleting student with Id " + studentId + "...");
+            session.delete(myStudent);
 
-            // display the students
-            System.out.println();
-            displayStudents(theStudents);
-
-            // commit transaction
+            // commit the transaction
             session.getTransaction().commit();
-
             System.out.println("Done!");
+
         }
         finally {
             factory.close();
         }
 
-    }
-
-    private static void displayStudents(List<Student> theStudents) {
-        for (Student tempStudent : theStudents) {
-            System.out.println(tempStudent);
-        }
     }
 }
