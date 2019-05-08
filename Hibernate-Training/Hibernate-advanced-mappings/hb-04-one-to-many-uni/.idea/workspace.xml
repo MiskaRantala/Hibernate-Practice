@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/luv2code/hibernate/demo/DeleteCourseAndReviewsDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="277">
+              <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -173,8 +173,8 @@
         <option value="$PROJECT_DIR$/src/com/luv2code/hibernate/demo/entity/Instructor.java" />
         <option value="$PROJECT_DIR$/src/com/luv2code/hibernate/demo/entity/Course.java" />
         <option value="$PROJECT_DIR$/src/com/luv2code/hibernate/demo/GetCourseAndReviewsDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/luv2code/hibernate/demo/DeleteCourseAndReviewsDemo.java" />
         <option value="$PROJECT_DIR$/src/com/luv2code/hibernate/demo/CreateCourseAndReviewsDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/luv2code/hibernate/demo/DeleteCourseAndReviewsDemo.java" />
       </list>
     </option>
   </component>
@@ -353,12 +353,12 @@
       <workItem from="1557214274205" duration="3927000" />
       <workItem from="1557239290751" duration="2331000" />
       <workItem from="1557243265856" duration="4065000" />
-      <workItem from="1557297182201" duration="3039000" />
+      <workItem from="1557297182201" duration="3113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40489000" />
+    <option name="totallyTimeSpent" value="40563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="799" extended-state="6" />
@@ -572,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/luv2code/hibernate/demo/DeleteCourseAndReviewsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="277">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
